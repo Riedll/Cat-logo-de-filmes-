@@ -1,19 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#lista-filmes{
+#lista-filmes {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     padding: 2rem;
 }
 
-#input-buscar-filme{
+#input-search-filme {
     width: 14rem;
-    border: 1px solid #000;
+    border: 1px solid #A93226;
     border-radius: 5px;
     padding: 0.5rem;
     font-size: 1rem;
+}
+#logo {
+width: 50px;
 }
