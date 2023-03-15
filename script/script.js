@@ -1,11 +1,11 @@
-let inputBuscarFilme = document.querySelector("#input-buscar-filme");
-let btnBuscarFilme = document.querySelector("#btn-buscar-filme");
+let inputShowFilme = document.querySelector("#input-show-filme");
+let btnShowFilme = document.querySelector("#btn-show-filme");
 
-btnBuscarFilme.onclick = async () => {
+btnShowFilme.onclick = async () => {
     event.preventDefault()
-    if (inputBuscarFilme.value.length > 0) {
+    if (inputShowFilme.value.length > 0) {
         let filmes = new Array();
-        fetch("http://www.omdbapi.com/?apikey=956c739e&s=" + inputBuscarFilme.value)
+        fetch("http://www.omdbapi.com/?apikey=956c739e&s=" + inputShowFilme.value)
             .then((resp) => resp.json())
             .then((resp) => {
                 console.log(resp)
