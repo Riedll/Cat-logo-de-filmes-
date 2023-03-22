@@ -70,6 +70,24 @@ class Filme {
 
         return card;
         getDetalhesFilme = () => {
-            return this.getDetalhesFilme     }
+            return this.getDetalhesFilme
+        }
     }
+}
+.then((resp) => {
+    console.log(resp);
+    let filme = new Filme(
+        resp.imdbID,
+        resp.Title,
+        resp.Year,
+        resp.Genre.split(","),
+        resp.Runtime,
+        resp.Poster,
+        resp.plot,
+        resp.Director,
+        resp.Actors.split(","),
+        resp.Awards,
+        resp.imdbRating
+    )
+    console.log(filme);
 }
