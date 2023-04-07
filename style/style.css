@@ -3,21 +3,30 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.navbar-brand img {
+    width: 3rem;
+}
+
 #lista-filmes {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     padding: 2rem;
+
 }
 
-#input-search-filme {
-    width: 14rem;
-    border: 1px solid #A93226;
-    border-radius: 5px;
-    padding: 0.5rem;
-    font-size: 1rem;
+.card {
+    padding: 15px;
 }
 
-#logo {
-    width: 50px;
+.active {
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
 }
